@@ -78,6 +78,8 @@ ORDER BY view DESC
 
 The last question was used to compare run time with a cached table and partitioned parquet data (with the query being modified to use the partitioned table). The partition was by the "date_built" field. The results of running the query five times are shown in the table below in seconds:
 
+|   | 1 (load)    | 2    | 3    | 4    | 5    | Avg 2-5    |
+|-------------|-------------|-------------|-------------|-------------|-------------|-------------|
 |Standard	|0.4185|	0.2205	|0.4027	|0.3108|	0.5537|	0.3719|
 |Cached|	0.4307|	0.2818|	0.2551|	0.1975|	0.2650|	0.2499 |
 |Parquet	|0.7521	|0.4725	|0.4590|	0.5148	|0.3451	|0.4479 |
