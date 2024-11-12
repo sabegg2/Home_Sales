@@ -63,7 +63,7 @@ ORDER BY year_built
 <img src="images/q3.png" width=200>
 <img src="images/q3_graph.png" width=400>
 
-Three-bedroom, three-bathroom, two-floor, at least 2000 square foot homes built in 2010 and 2011 have lower average sale prices while the same sorts of homes built in 2012 have the highest average sale price, decreasing after that. It is interesting to compare these results to the previous section--filtering to 2 floors and at least 2000 square feet changes the pattern of average sale prices by year built.
+Three-bedroom, three-bathroom, two-floor, at least 2000 square foot homes built in 2010 and 2011 have lower average sale prices while the same sorts of homes built in 2012 have the highest average sale price, decreasing for year built more recent than 2012. It is interesting to compare these results to the previous section--filtering to 2 floors and at least 2000 square feet changes the pattern of average sale prices by year built.
 
 
 4. What is the average price of a home per "view" rating having an average home price greater than or equal to $350,000?
