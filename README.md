@@ -1,7 +1,7 @@
 # Home-Sales-challenge
 - Module 22 Challenge
 - Steph Abegg
-  
+
 This challenge demonstrates the usage of PySpark and SparkSQL to determine key metrics on home sale data from 2019 to 2022. We use Spark to create temporary views, partition the data, cache and uncache a temporary table, and verify that the table has been uncached.
 
 The data is loaded from an S3 bucket but can also be found in this repository at [home_sales_revised.csv](Resources/home_sales_revised.csv) . The analysis is done in the [Home_Sales.ipynb](Home_Sales.ipynb) notebook.
@@ -24,6 +24,7 @@ ORDER BY year_sold
 
 <img src="images/q1.png" width=300>
 
+For these four years of data, there is not an obvious trend in average price of four-bedroom homes from year to year.
 
 2. What is the average price of a home for each year it was built that has three bedrooms and three bathrooms?
 3. 
@@ -39,6 +40,7 @@ ORDER BY year_built
 
 <img src="images/q2.png" width=300>
 
+Three-bedroom, three-bathroom homes built in 2015 have the lowest average sale price of these kind of homes while three-bedroom, three-bathroom homes built in 2013 have the highest average sale price of these kind of homes.
 
 3. What is the average price of a home for each year that has three bedrooms, three bathrooms, two floors, and is greater than or equal to 2,000 square feet?
 
@@ -57,6 +59,8 @@ ORDER BY year_built
 ```
 
 <img src="images/q3.png" width=300>
+
+Three-bedroom, three-bathroom, two-floor, at least 2000 square foot homes built in 2011 have the lowest average sale price of these kind of homes while Three-bedroom, three-bathroom, two-floor, at least 2000 square foot built in 2012 have the highest average sale price of these kind of homes.
 
 
 4. What is the "view" rating for the average price of a home where the homes are greater than or equal to $350,000?
