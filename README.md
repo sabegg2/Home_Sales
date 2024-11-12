@@ -83,7 +83,7 @@ ORDER BY view DESC
 
 50 results returned.
 
-Average price of a home is lower for view ratings 50-74, and higher for view ratings 75-100. So view rating is somewhat correlated to average sale price.
+Average price of a home is lower ($700,000-800,000) for view ratings 50-74, and higher ($1,000,000-1,100,000) for view ratings 75-100. There do not appear to be average prices between $800,000-1,000,000, so the data is a bit clustered. 
 
 
 The last question was used to compare run time with a cached table and partitioned parquet data (with the query being modified to use the partitioned table). The partition was by the "date_built" field. The results of running the query five times are shown in the table below in seconds:
