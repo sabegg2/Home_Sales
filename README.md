@@ -26,8 +26,8 @@ ORDER BY year_sold
 
 For these four years of data, there is not an obvious trend in average price of four-bedroom homes from year to year.
 
-2. What is the average price of a home for each year it was built that has three bedrooms and three bathrooms?
-3. 
+2. What is the average price of a home for each year the home was built, that has three bedrooms and three bathrooms?
+
 ```python
 SELECT
     date_built as year_built,
@@ -42,7 +42,7 @@ ORDER BY year_built
 
 Three-bedroom, three-bathroom homes built in 2015 have the lowest average sale price of these kind of homes while three-bedroom, three-bathroom homes built in 2013 have the highest average sale price of these kind of homes.
 
-3. What is the average price of a home for each year that has three bedrooms, three bathrooms, two floors, and is greater than or equal to 2,000 square feet?
+3. What is the average price of a home for each year the home was built, that has three bedrooms, three bathrooms, two floors, and is greater than or equal to 2,000 square feet?
 
 ```python
 SELECT
@@ -63,7 +63,7 @@ ORDER BY year_built
 Three-bedroom, three-bathroom, two-floor, at least 2000 square foot homes built in 2011 have the lowest average sale price of these kind of homes while Three-bedroom, three-bathroom, two-floor, at least 2000 square foot built in 2012 have the highest average sale price of these kind of homes.
 
 
-4. What is the "view" rating for the average price of a home where the homes are greater than or equal to $350,000?
+4. What is the average price of a home per "view" rating having an average home price greater than or equal to $350,000?
    
 ```python
 SELECT
@@ -77,8 +77,10 @@ ORDER BY view DESC
 
 <img src="images/q4_1.png" width=300>
 
+50 results returned.
 
-50 results returned
+At least for the top 20 view ratings, there does not appear to be a trend of average price.
+
 
 The last question was used to compare run time with a cached table and partitioned parquet data (with the query being modified to use the partitioned table). The partition was by the "date_built" field. The results of running the query five times are shown in the table below in seconds:
 
