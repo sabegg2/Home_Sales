@@ -25,7 +25,7 @@ ORDER BY year_sold
 <img src="images/q1.png" width=200>
 <img src="images/q1_graph.png" width=400>
 
-For these four years of data, we don't have enough data to detect an obvious trend in average price of four-bedroom homes from year to year.
+In this case, four years of data is not enough to detect an obvious trend in average price of four-bedroom homes from year to year.
 
 2. What is the average price of a home for each year the home was built, that has three bedrooms and three bathrooms?
 
