@@ -79,9 +79,10 @@ ORDER BY view DESC
 ```
 
 <img src="images/q4_1.png" width=200>
-<img src="images/q4_graph.png" width=400>
 
 50 results returned.
+
+<img src="images/q4_graph.png" width=400>
 
 Average price of a home is lower ($700,000-800,000) for view ratings 50-74, and higher ($1,000,000-1,100,000) for view ratings 75-100. There do not appear to be average prices between $800,000-1,000,000, so the housing price data is a bit clustered. 
 
