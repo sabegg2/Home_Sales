@@ -6,7 +6,7 @@ This challenge demonstrates the usage of PySpark and SparkSQL to determine key m
 
 The data is loaded from an S3 bucket but can also be found in this repository at [home_sales_revised.csv](Resources/home_sales_revised.csv) . The analysis is done in the [Home_Sales.ipynb](Home_Sales.ipynb) notebook.
 
-## Analysis
+## Query Analysis
 
 I analyzed the data to answer the following questions:
 
@@ -85,6 +85,7 @@ ORDER BY view DESC
 
 Average price of a home is lower ($700,000-800,000) for view ratings 50-74, and higher ($1,000,000-1,100,000) for view ratings 75-100. There do not appear to be average prices between $800,000-1,000,000, so the housing price data is a bit clustered. 
 
+## Run Time Analysis
 
 The last question was used to compare run time with a cached table and partitioned parquet data (with the query being modified to use the partitioned table). The partition was by the "date_built" field. The results of running the query five times are shown in the table below in seconds:
 
@@ -95,7 +96,5 @@ The last question was used to compare run time with a cached table and partition
 |Parquet	|0.7521	|0.4725	|0.4590|	0.5148	|0.3451	|0.4479 |
 
 The first run was not included in the average as it was when the cell was run for the first time.
-
-## Conclusion
 
 From the time table, we can see that running a query on the cached table was the fastest option. We also see that the partitioned parquet files were the slowest. This is likely due to the partition being on the "date_built" column, which was not used in the query and the size of the data was not very big.
