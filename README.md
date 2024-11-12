@@ -22,7 +22,8 @@ GROUP BY year_sold
 ORDER BY year_sold
 ```
 
-<img src="images/q1.png" width=300>
+<img src="images/q1.png" width=200>
+<img src="images/q1_graph.png" width=400>
 
 For these four years of data, there is not an obvious trend in average price of four-bedroom homes from year to year.
 
@@ -38,7 +39,8 @@ GROUP BY year_built
 ORDER BY year_built
 ```
 
-<img src="images/q2.png" width=300>
+<img src="images/q2.png" width=200>
+<img src="images/q2_graph.png" width=400>
 
 Three-bedroom, three-bathroom homes built in 2015 have the lowest average sale price of these kind of homes while three-bedroom, three-bathroom homes built in 2013 have the highest average sale price of these kind of homes.
 
@@ -58,9 +60,10 @@ GROUP BY year_built
 ORDER BY year_built
 ```
 
-<img src="images/q3.png" width=300>
+<img src="images/q3.png" width=200>
+<img src="images/q3_graph.png" width=400>
 
-Three-bedroom, three-bathroom, two-floor, at least 2000 square foot homes built in 2011 have the lowest average sale price of these kind of homes while Three-bedroom, three-bathroom, two-floor, at least 2000 square foot built in 2012 have the highest average sale price of these kind of homes.
+Three-bedroom, three-bathroom, two-floor, at least 2000 square foot homes built had lower average sale prices in 2010 and 2011 a peak in avearage sale price in 2012, decreasing after that. It apears that something happened in the housing market to cause the sale prices of such homes to go up in 2012.
 
 
 4. What is the average price of a home per "view" rating having an average home price greater than or equal to $350,000?
@@ -75,11 +78,12 @@ HAVING avg_price >= 350000
 ORDER BY view DESC
 ```
 
-<img src="images/q4_1.png" width=300>
+<img src="images/q4_1.png" width=200>
+<img src="images/q4_graph.png" width=400>
 
 50 results returned.
 
-At least for the top 20 view ratings, there does not appear to be a trend of average price.
+Average price is low for view ratings 50-74, and higher for view ratings 75-100.
 
 
 The last question was used to compare run time with a cached table and partitioned parquet data (with the query being modified to use the partitioned table). The partition was by the "date_built" field. The results of running the query five times are shown in the table below in seconds:
