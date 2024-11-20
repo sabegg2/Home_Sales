@@ -23,7 +23,7 @@ ORDER BY year_sold
 ```
 
 <img src="images/q1.png" width=200>
-<img src="images/q1_graph.png" width=400>
+<img src="images/q1_graph.png" width=700>
 
 In this case, four years of data is not enough to detect an obvious trend in average price of four-bedroom homes from year to year.
 
@@ -40,7 +40,7 @@ ORDER BY year_built
 ```
 
 <img src="images/q2.png" width=200>
-<img src="images/q2_graph.png" width=400>
+<img src="images/q2_graph.png" width=700>
 
 Three-bedroom, three-bathroom homes built in 2015 have the lowest average sale price of these kind of homes while three-bedroom, three-bathroom homes built in 2013 have the highest average sale price of these kind of homes. The trend appears to be a bit sinusoidal, but more data would be needed to see if this trend continues.
 
@@ -61,7 +61,7 @@ ORDER BY year_built
 ```
 
 <img src="images/q3.png" width=200>
-<img src="images/q3_graph.png" width=400>
+<img src="images/q3_graph.png" width=700>
 
 Three-bedroom, three-bathroom, two-floor, at least 2000 square foot homes built in 2010 and 2011 have lower average sale prices while the same sorts of homes built in 2012 have the highest average sale price, decreasing for year built more recent than 2012. It is interesting to compare these results to the previous section--filtering to 2 floors and at least 2000 square feet changes the pattern of average sale prices by year built.
 
@@ -82,7 +82,7 @@ ORDER BY view DESC
 
 50 results returned.
 
-<img src="images/q4_graph.png" width=400>
+<img src="images/q4_graph.png" width=700>
 
 Average price of a home is lower ($700,000-$800,000) for view ratings 50-74, and higher ($1,000,000-$1,100,000) for view ratings 75-100. There do not appear to be average prices between $800,000-1,000,000, so the housing price data is a bit clustered. 
 
