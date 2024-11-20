@@ -4,7 +4,9 @@
 
 This challenge demonstrates the usage of PySpark and SparkSQL to determine key metrics on home sale data from 2019 to 2022. We use Spark to create temporary views, partition the data, cache and uncache a temporary table, and verify that the table has been uncached.
 
-The data is loaded from an S3 bucket but can also be found in this repository at [home_sales_revised.csv](Resources/home_sales_revised.csv) . The analysis is done in the [Home_Sales.ipynb](Home_Sales.ipynb) notebook.
+The data is loaded from an S3 bucket but can also be found in this repository at [home_sales_revised.csv](Resources/home_sales_revised.csv). The analysis is done in the [Home_Sales.ipynb](Home_Sales.ipynb) notebook.
+
+Although not required, I created visuals of the data by converting to Pandas dataframes and plotting using Plotly.
 
 ## Query Analysis
 
