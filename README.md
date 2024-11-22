@@ -100,4 +100,4 @@ The last question was used to compare run time with a cached table and partition
 
 The first run was not included in the average as it was when the cell was run for the first time.
 
-From the time table, we can see that running a query on the cached table was the fastest option. We also see that the partitioned parquet files were the slowest. This is likely due to the partition being on the "date_built" column, which was not used in the query and the size of the data was not very big.
+From the time table, we can see that running a query on the cached table was the fastest option. By caching, Spark avoids reading the data from the disk repeatedly, which can significantly improve performance for iterative or repeated queries. We also see that the partitioned parquet files were the slowest. This is likely due to the partition being on the "date_built" column, which was not used in the query and the size of the data was not very big.
